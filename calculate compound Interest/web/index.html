@@ -36,12 +36,46 @@
             background-color: #ffe8a1;
         }
     </style>
+    <script type="text/javascript">
+//        function validate(){
+//            var amount =/^[0-9]{4}$/;
+//            var months=/^[A-Z][a-z]*$/;
+//            if(amount.test(document.getElementById("principal-amount").value==false){
+//                alert("invalid");
+//                return false;
+//            }
+//            if(months.test(document.getElementById("months").value==false){
+//                alert("invalid");
+//                return false;
+//            }
+//        }
+
+        function validate() {
+            var amountPattern = /^[0-9]{4}$/;
+            var monthsPattern = /^[A-Za-z]+$/;
+
+            var amountValue = document.getElementById("principal-amount").value;
+            var monthsValue = document.getElementById("months").value;
+
+            if (!amountPattern.test(amountValue)) {
+                alert("Invalid principal amount. It should be a 4-digit number.");
+                return false;
+            }
+            if (!monthsPattern.test(monthsValue)) {
+                alert("Invalid months value. It should only contain alphabetic characters.");
+                return false;
+            }
+            return true;
+        }
+
+    
+</script>
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center min-vh-100">
         <div class="form-container w-100" style="max-width: 500px;">
             <h1 class="text-center fw-bold mb-4">Calculate Compound Interest</h1>
-            <form>
+            <form onsubmit="return validate()">
                 <div class="mb-3">
                     <label for="principal-amount" class="form-label">Principal Amount</label>
                     <div class="input-group">
@@ -82,7 +116,8 @@
                     </select>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-calculate btn-lg">Calculate</button>
+                    <!--<button type="submit" class="btn btn-calculate btn-lg">Calculate</button>-->
+                    <input type="submit" class="btn btn-calculate btn-lg" value="Calculate">
                 </div>
             </form>
         </div>
