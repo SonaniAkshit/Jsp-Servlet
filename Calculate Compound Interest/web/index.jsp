@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compound Interest Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
         body {
             background-color: #f8f9fa;
@@ -76,13 +78,19 @@
                 </div>
             </form>
             <% if (request.getAttribute("principal") != null) { %>
-            <div id="result" class="result-container">
-                <h5>Compound Interest Result:</h5>
-                <p>Principal: <%= request.getAttribute("principal") %></p>
-                <p>Interest: <%= request.getAttribute("interest") %></p>
-                <p>Total Amount: <%= request.getAttribute("amount") %></p>
-            </div>
-            <% } %>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                title: "Compound Interest Result",
+                html: `
+                    <p><strong>Principal:</strong> <%= request.getAttribute("principal") %></p>
+                    <p><strong>Interest:</strong> <%= request.getAttribute("interest") %></p>
+                    <p><strong>Total Amount:</strong> <%= request.getAttribute("amount") %></p>
+                `
+            });
+        });
+    </script>
+    <% } %>
         </div>
     </div>
 </body>
