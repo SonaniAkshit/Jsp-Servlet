@@ -1,7 +1,7 @@
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
+import jakarta.servlet.RequestDispatcher;
 
 public class CompoundInterestServlet extends HttpServlet {
     @Override
@@ -15,19 +15,18 @@ public class CompoundInterestServlet extends HttpServlet {
 
         double time = years + (months / 12.0);
 
-        //Formula: A = P(1 + r/n)^(nt)
+        // Formula: A = P(1 + r/n)^(nt)
         double compoundFactor = Math.pow(1 + (rate / 100) / interval, interval * time);
         double amount = principal * compoundFactor;
         double interest = amount - principal;
 
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h5>Calculated Compound Interest:</h5>");
-        out.println("<p>Principal: ₹" + principal + "</p>");
-        out.println("<p>Interest: ₹" + String.format("%.2f", interest) + "</p>");
-        out.println("<p>Total Amount: ₹" + String.format("%.2f", amount) + "</p>");
-        out.println("<a href='index.html'>Go Back</a>");
-        out.println("</body></html>");
+        // Set attributes to forward to the JSP or HTML page
+        request.setAttribute("principal", principal);
+        request.setAttribute("interest", String.format("%.2f", interest));
+        request.setAttribute("amount", String.format("%.2f", amount));
+
+        // Forward the request back to index.html
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
     }
 }
