@@ -1,7 +1,6 @@
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
-import jakarta.servlet.RequestDispatcher;
 
 public class CompoundInterestServlet extends HttpServlet {
     @Override
@@ -15,18 +14,25 @@ public class CompoundInterestServlet extends HttpServlet {
 
         double time = years + (months / 12.0);
 
-        // Formula: A = P(1 + r/n)^(nt)
         double compoundFactor = Math.pow(1 + (rate / 100) / interval, interval * time);
         double amount = principal * compoundFactor;
         double interest = amount - principal;
 
-        // Set attributes to forward to the JSP or HTML page
-        request.setAttribute("principal", principal);
-        request.setAttribute("interest", String.format("%.2f", interest));
-        request.setAttribute("amount", String.format("%.2f", amount));
+        // Set the response content type to HTML
+        response.setContentType("text/html");
 
-        // Forward the request back to index.html
-        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-        dispatcher.forward(request, response);
+        // Write the output directly to the response
+        response.getWriter().println("<html>");
+        response.getWriter().println("<head><title>Compound Interest Calculation</title></head>");
+        response.getWriter().println("<body>");
+        response.getWriter().println("<h1>Compound Interest Calculation</h1>");
+        response.getWriter().println("<p>Principal: " + principal + "</p>");
+        response.getWriter().println("<p>Rate: " + rate + "%</p>");
+        response.getWriter().println("<p>Time: " + years + " years and " + months + " months</p>");
+        response.getWriter().println("<p>Compounding Interval: " + interval + " times per year</p>");
+        response.getWriter().println("<p>Interest: " + String.format("%.2f", interest) + "</p>");
+        response.getWriter().println("<p>Total Amount: " + String.format("%.2f", amount) + "</p>");
+        response.getWriter().println("</body>");
+        response.getWriter().println("</html>");
     }
 }

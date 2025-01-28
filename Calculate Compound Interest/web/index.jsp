@@ -77,20 +77,6 @@
                     <button type="submit" class="btn btn-calculate btn-lg">Calculate</button>
                 </div>
             </form>
-            <% if (request.getAttribute("principal") != null) { %>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            Swal.fire({
-                title: "Compound Interest Result",
-                html: `
-                    <p><strong>Principal:</strong> <%= request.getAttribute("principal") %></p>
-                    <p><strong>Interest:</strong> <%= request.getAttribute("interest") %></p>
-                    <p><strong>Total Amount:</strong> <%= request.getAttribute("amount") %></p>
-                `
-            });
-        });
-    </script>
-    <% } %>
         </div>
     </div>
 </body>
