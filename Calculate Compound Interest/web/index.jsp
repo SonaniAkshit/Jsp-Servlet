@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
         }
         .form-container {
             background: #ffffff;
@@ -17,17 +18,17 @@
             padding: 30px;
         }
         .btn-calculate {
-            background-color: #f15b2a;
+            background-color: #000000;
             color: #ffffff;
         }
         .btn-calculate:hover {
-            background-color: #d94a1f;
+            background-color: #000000;
         }
         .result-container {
             margin-top: 20px;
             padding: 15px;
-            background: #e9f7ef;
-            border: 1px solid #28a745;
+            background: #ffffff;
+            border: 1px solid #000000;
             border-radius: 8px;
         }
     </style>

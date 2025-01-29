@@ -34,19 +34,19 @@ public class Servlet extends HttpServlet {
                 out.println("</ul>");
             }
             
-            out.println("<h2>HTTP Request Headers</h2>");
-            Enumeration<String> headerNames = request.getHeaderNames();
-            if (!headerNames.hasMoreElements()) {
-                out.println("<p>No headers found.</p>");
-            } else {
-                out.println("<ul>");
-                while (headerNames.hasMoreElements()) {
-                    String headerName = headerNames.nextElement();
-                    String headerValue = request.getHeader(headerName);
-                    out.println("<li><strong>" + headerName + ":</strong> " + headerValue + "</li>");
-                }
-                out.println("</ul>");
-            }
+//            out.println("<h2>HTTP Request Headers</h2>");
+//            Enumeration<String> headerNames = request.getHeaderNames();
+//            if (!headerNames.hasMoreElements()) {
+//                out.println("<p>No headers found.</p>");
+//            } else {
+//                out.println("<ul>");
+//                while (headerNames.hasMoreElements()) {
+//                    String headerName = headerNames.nextElement();
+//                    String headerValue = request.getHeader(headerName);
+//                    out.println("<li><strong>" + headerName + ":</strong> " + headerValue + "</li>");
+//                }
+//                out.println("</ul>");
+//            }
 
             out.println("<h2>Client/Browser Information</h2>");
             out.println("<p><strong>Remote Address:</strong> " + request.getRemoteAddr() + "</p>");

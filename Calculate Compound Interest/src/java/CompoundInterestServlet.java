@@ -18,10 +18,9 @@ public class CompoundInterestServlet extends HttpServlet {
         double amount = principal * compoundFactor;
         double interest = amount - principal;
 
-        // Set the response content type to HTML
         response.setContentType("text/html");
 
-        // Write the output directly to the response
+        
         response.getWriter().println("<html>");
         response.getWriter().println("<head><title>Compound Interest Calculation</title></head>");
         response.getWriter().println("<body>");
@@ -29,7 +28,7 @@ public class CompoundInterestServlet extends HttpServlet {
         response.getWriter().println("<p>Principal: " + principal + "</p>");
         response.getWriter().println("<p>Rate: " + rate + "%</p>");
         response.getWriter().println("<p>Time: " + years + " years and " + months + " months</p>");
-        response.getWriter().println("<p>Compounding Interval: " + interval + " times per year</p>");
+        response.getWriter().println("<p>Compounding Interval: " + interval + "</p>");
         response.getWriter().println("<p>Interest: " + String.format("%.2f", interest) + "</p>");
         response.getWriter().println("<p>Total Amount: " + String.format("%.2f", amount) + "</p>");
         response.getWriter().println("</body>");
