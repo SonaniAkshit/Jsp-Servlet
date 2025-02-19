@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-900">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-xl font-bold mb-4 text-white">Compound Interest Calculator</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm font-bold mb-2" for="principal-amount">Principal Amount</label>
+                <div class="flex items-center border border-gray-600 rounded-md">
+                    <span class="px-3 text-gray-400">$</span>
+                    <input class="w-full py-2 px-3 text-gray-300 bg-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="principal-amount" type="text">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm font-bold mb-2" for="interest-rate">Interest rate:</label>
+                <div class="flex items-center border border-gray-600 rounded-md">
+                    <input class="w-full py-2 px-3 text-gray-300 bg-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="interest-rate" type="text">
+                    <span class="px-3 text-gray-400">%</span>
+                </div>
+            </div>
+            <div class="flex mb-4">
+                <div class="w-1/2 pr-2">
+                    <label class="block text-gray-300 text-sm font-bold mb-2" for="years">Years:</label>
+                    <input class="w-full py-2 px-3 border border-gray-600 rounded-md text-gray-300 bg-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="years" type="text">
+                </div>
+                <div class="w-1/2 pl-2">
+                    <label class="block text-gray-300 text-sm font-bold mb-2" for="months">Months:</label>
+                    <input class="w-full py-2 px-3 border border-gray-600 rounded-md text-gray-300 bg-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="months" type="text">
+                </div>
+            </div>
+            <div class="mb-4 p-4 rounded-md">
+                <label class="block text-gray-300 text-sm font-bold mb-2" for="compound-interval">Compound interval:</label>
+                <select class="w-full py-2 px-3 border border-gray-600 rounded-md text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="compound-interval">
+                    <option>Daily (365/yr)</option>
+                    <option>Daily (360/yr)</option>
+                    <option>Weekly (52/yr)</option>
+                    <option>Bi-Weekly (26/yr)</option>
+                    <option>Half-Monthly (24/yr)</option>
+                    <option>Monthly (12/yr)</option>
+                    <option>Bi-Monthly (6/yr)</option>
+                    <option>Quarterly (4/yr)</option>
+                    <option>Half-Yearly (2/yr)</option>
+                    <option>Yearly (1/yr)</option>
+                </select>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-orange-500 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:shadow-outline" type="button">Calculate</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
