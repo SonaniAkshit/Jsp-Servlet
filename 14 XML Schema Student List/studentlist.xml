@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reference to XSD -->
+<studentlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="studentlist.xsd">
+  
+  <student>
+    <enrollmentno>ENR001</enrollmentno>
+    <name>
+      <firstname>Ravi</firstname>
+      <middlename>Kumar</middlename>
+      <lastname>Sharma</lastname>
+    </name>
+    <study_program>MBA</study_program>
+    <enrolment_year>2023</enrolment_year>
+  </student>
+
+  <student>
+    <enrollmentno>ENR002</enrollmentno>
+    <name>
+      <firstname>Sneha</firstname>
+      <lastname>Mehta</lastname>
+    </name>
+    <study_program>MSc</study_program>
+    <enrolment_year>2022</enrolment_year>
+  </student>
+
+</studentlist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE studentlist SYSTEM "studentlist.dtd">
+<studentlist>
+  <student>
+    <enrollmentno>240160510049</enrollmentno>
+    <name>
+      <firstname>Akshit</firstname>
+      <middlename>Arvindbhai</middlename>
+      <lastname>Sonani</lastname>
+    </name>
+    <study_program>MCA</study_program>
+    <enrolment_year>2025</enrolment_year>
+  </student>
+
+  <student>
+    <enrollmentno>240160510027</enrollmentno>
+    <name>
+      <firstname>Hardik</firstname>
+      <lastname>Mekhiya</lastname>
+    </name>
+    <study_program>MCA</study_program>
+    <enrolment_year>2025</enrolment_year>
+  </student>
+</studentlist>

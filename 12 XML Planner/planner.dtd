@@ -5,4 +5,4 @@
 <!ATTLIST date
     month CDATA #REQUIRED
     day CDATA #REQUIRED>
-<!ELEMENT note (#PCDATA)>
+<!ELEMENT note (#PCDATA)> 
