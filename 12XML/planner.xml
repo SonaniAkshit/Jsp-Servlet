@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE planner SYSTEM "planner.dtd">
+<planner>
+    <year value="2025">
+        <date month="01" day="15">
+            <note>Plan annual meeting</note>
+        </date>
+        <date month="02" day="20">
+            <note>Review project deadlines</note>
+        </date>
+    </year>
+    <year value="2026">
+        <date month="03" day="10">
+            <note>Schedule team training</note>
+        </date>
+    </year>
+</planner>
