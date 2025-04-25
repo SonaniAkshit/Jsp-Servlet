@@ -1,0 +1,184 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 25, 2025, 6:15:33 AM
+    Author     : Admin
+*/
+
+/* Reset default margins and ensure full viewport height */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Container for the search form and results */
+.search-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for container */
+.search-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+    color: #003087;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #003087;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* Form labels */
+label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0 8px;
+    font-weight: 500;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus and hover effects */
+input[type="text"]:focus,
+input[type="text"]:hover {
+    border-color: #003087;
+    box-shadow: 0 0 8px rgba(0, 48, 135, 0.2);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #003087;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover and active effects */
+input[type="submit"]:hover {
+    background-color: #00205b;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Results table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* Table headers */
+th {
+    background-color: #003087;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Table cells */
+td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    color: #333;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #e9ecef;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    color: #dc3545;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Error message */
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .search-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
