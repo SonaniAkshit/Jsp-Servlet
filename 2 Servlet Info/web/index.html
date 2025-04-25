@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="RequestInfoServlet" method="post">
+        <a href="RequestInfoServlet">
+            <input type="button" value="Run Servlet">
+        </a>
+    </form>
+</body>
+</html>

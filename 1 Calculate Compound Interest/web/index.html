@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compound Interest Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input, select {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let principal = document.forms["interestForm"]["principal"].value;
+            let rate = document.forms["interestForm"]["rate"].value;
+            let years1 = document.forms["interestForm"]["years1"].value;
+            let years2 = document.forms["interestForm"]["years2"].value;
+
+            if (principal == "" || rate == "" || years1 == "" || years2 == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            if (isNaN(principal) || isNaN(rate) || isNaN(years1) || isNaN(years2)) {
+                alert("Please enter valid numbers");
+                return false;
+            }
+            if (principal <= 0 || rate <= 0 || (years1 + years2) <= 0) {
+                alert("Values must be positive");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="interestForm" action="CompoundInterestServlet" method="post" onsubmit="return validateForm()">
+        <label>Principal Amount: Rs</label><input type="text" name="principal" value="1000"><br>
+        <label>Interest rate: %</label><input type="text" name="rate" value="10"><br>
+        <label>Years:</label>
+        <input type="text" name="years1" value="1" size="2"> 
+        <label>Months:</label>
+        <input type="text" name="years2" value="0" size="2"><br>
+        <label>Compound interval:</label>
+        <select name="compound">
+            <option value="4">Quarterly (4/yr)</option>
+            <option value="365">Daily (365/yr)</option>
+            <option value="52">Weekly (52/yr)</option>
+            <option value="24">Half-Monthly (24/yr)</option>
+            <option value="12">Bi-Monthly (12/yr)</option>
+            <option value="2">Half-Yearly (2/yr)</option>
+            <option value="1">Yearly (1/yr)</option>
+        </select><br>
+        <input type="submit" value="Calculate">
+    </form>
