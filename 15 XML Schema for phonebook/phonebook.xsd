@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="phonebook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="department" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deptname" type="xs:string"/>
+              <xs:element name="deptphone" type="xs:string"/>
+              <xs:element name="deptemail" type="xs:string"/>
+              <xs:element name="employee" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="empid" type="xs:string"/>
+                    <xs:element name="empname" type="xs:string"/>
+                    <xs:element name="empphone" type="xs:string"/>
+                    <xs:element name="empemail" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Link the XML file with the Schema -->
+<phonebook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="phonebook.xsd">
+
+  <department>
+    <deptname>Computer Science</deptname>
+    <deptphone>079 40016331/326</deptphone>
+    <deptemail>cs@gujaratvidyapith.org</deptemail>
+    
+    <employee>
+      <empid>EMP001</empid>
+      <empname>Ravi Sharma</empname>
+      <empphone>9876543210</empphone>
+      <empemail>ravi@gujaratvidyapith.edu</empemail>
+    </employee>
+    
+    <employee>
+      <empid>EMP002</empid>
+      <empname>Sneha Mehta</empname>
+      <empphone>9876543222</empphone>
+      <empemail>sneha@gujaratvidyapith.edu</empemail>
+    </employee>
+  </department>
+
+  <department>
+    <deptname>Mathematics</deptname>
+    <deptphone>0456-789123</deptphone>
+    <deptemail>maths@gujaratvidyapith.edu</deptemail>
+    
+    <employee>
+      <empid>EMP003</empid>
+      <empname>Rahul Verma</empname>
+      <empphone>9876543233</empphone>
+      <empemail>rahul@gujaratvidyapith.edu</empemail>
+    </employee>
+  </department>
+
+</phonebook>
