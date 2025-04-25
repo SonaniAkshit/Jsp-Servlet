@@ -1,0 +1,104 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 25, 2025, 6:50:27 AM
+    Author     : Admin
+*/
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Calculator container */
+.calculator-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Operation radio buttons */
+.operation {
+    text-align: left;
+    margin: 10px 0 15px;
+}
+
+.operation input[type="radio"] {
+    margin-right: 10px;
+}
+
+.operation label {
+    display: inline;
+    margin: 0 15px 0 5px;
+    font-weight: normal;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    width: 45%;
+}
+
+input[type="button"] {
+    background-color: #f44336;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="button"]:hover {
+    background-color: #da190b;
+}
+
+/* Result display */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+}
