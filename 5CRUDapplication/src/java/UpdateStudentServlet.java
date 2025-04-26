@@ -37,5 +37,5 @@ public class UpdateStudentServlet extends HttpServlet {
         }
 
         response.sendRedirect("index.jsp");
-    }
+    } 
 }
