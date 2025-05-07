@@ -10,8 +10,8 @@
     
     <employee>
       <empid>EMP001</empid>
-      <empname>Ravi Sharma</empname>
       <empphone>9876543210</empphone>
+      <empname>Ravi Sharma</empname>
       <empemail>ravi@gujaratvidyapith.edu</empemail>
     </employee>
     

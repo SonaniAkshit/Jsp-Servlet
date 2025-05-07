@@ -1,0 +1,2 @@
+WINGET UPGRADE // for software update 
+WINGET UPGRADE --all

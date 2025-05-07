@@ -8,7 +8,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="enrollmentno" type="xs:string"/>
-              
+
               <xs:element name="name">
                 <xs:complexType>
                   <xs:sequence>
@@ -30,13 +30,7 @@
                 </xs:simpleType>
               </xs:element>
 
-              <xs:element name="enrolment_year">
-                <xs:simpleType>
-                  <xs:restriction base="xs:gYear">
-                    <xs:pattern value="\d{4}"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
+              <xs:element name="enrolment_year" type="xs:gYear"/>
 
             </xs:sequence>
           </xs:complexType>
