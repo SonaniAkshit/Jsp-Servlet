@@ -65,7 +65,7 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## 📬 Contact
 
-- **Author:** Akshit Sonani
+- **Developer:** Akshit Sonani
 - **Email:** sonaniakshit684.com
 - **GitHub:** [SonaniAkshit](https://github.com/SonaniAkshit)
 
