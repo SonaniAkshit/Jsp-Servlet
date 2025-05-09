@@ -14,13 +14,6 @@ Welcome to the **JSP Servlet Project Collection**! This repository contains a va
 - **Calculator & Search Forms**: Utility web apps for hands-on practice.
 - **Well-Structured Examples**: Each project is self-contained and easy to run.
 
----
-
-## 📸 Screenshots
-
-> _Add screenshots of your favorite projects here!_
-
----
 
 ## 🗂️ Folder Structure
 
@@ -34,7 +27,6 @@ Welcome to the **JSP Servlet Project Collection**! This repository contains a va
 └── README.md                       # This file
 ```
 
----
 
 ## 🛠️ Technologies Used
 
@@ -44,7 +36,6 @@ Welcome to the **JSP Servlet Project Collection**! This repository contains a va
 - XML
 - HTML, CSS
 
----
 
 ## ⚡ Getting Started
 
@@ -66,19 +57,11 @@ Welcome to the **JSP Servlet Project Collection**! This repository contains a va
 5. **Access in browser:**
    - Visit `http://localhost:8080/YourProjectName`
 
----
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new examples.
 
----
-
-## 📄 License
-
-This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
 
 ## 📬 Contact
 
@@ -86,4 +69,4 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 - **Email:** sonaniakshit684.com
 - **GitHub:** [SonaniAkshit](https://github.com/SonaniAkshit)
 
-> _Happy coding!_ 🎉
+# 🔥 Happy Coding! 🚀
